@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<script type='text/javascript' src='VisitHamScript.js'></script>
+	</head>
+	<body onload="init()">
+		<h1>Visit Hampshire!</h1>
+		<form id="search">
+			Type: <input id="type"></input>
+			<input type="button" id="btnSearch" value="Search"></input>
+		</form>
+		<div id="booking">
+			<form id="book" style="display:none; border:1px solid black; width:30%" method="post">
+					<h2>Book</h2>
+					Number of people: <input type="number" id="amount"></input><br/>
+					Day: <input type="number" id="day"></input><br/>
+					Month: <input type="number" id="month"></input><br/>
+					Year: <input type="number" id="year"></input><br/>
+
+					<input type="button" id="btnBook" value="Book"><br/>
+					<input type="button" onclick="closeForm()" id="btnCancel" value="Cancel"><br/>
+			</form>
+		</div>
+		<div id="response"></div>
+	</body>
+</html>

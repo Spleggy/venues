@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  </head>
+  <body>
+    <h1>Index</h1>
+    <h2>Kevin Blandford</h2>
+    <p>This page is a list of directories linking to each page of the website along with how to use and test each</p>
+      It will return a status code along with any data in JSON format.
+      It will return HTTP status code 200 OK if the web server finds information, and 404 Not Found if it doesn't find anything.
+    <br/><a href="/~wad1903/location/Hampshire">Location search on it's own</a><br/>
+
+    <p>Again it uses the same HTTP status codes as before.
+    <br/><a href="/~wad1903/location/Hampshire/type/hotel">Type and Location searching together</a><br/>
+
+    <p>I have used post data in order to do booking so you cannot test from just a URL.
+      To test this, please visit <a href="search.html">search.html</a>, search for a location eg Hampshire and then click to book and enter
+      Day: 1, Month: 4, Year: 2020 with any amount of people.
+      This post data includes ID of the accommodation, amount of people, and the date in YYMMDD format.
+      This also uses HTTP status codes 200 and 404 for the same reasons.
+      This includes status code 201 which signifies Creation, and 400 to signify no data exists.<br/>
+
+
+    <br/>This is a list of all pages:
+    <br/><a href="search.html">search.html</a><br/>
+    <br/><a href="VisitHampshire.html">VisitHampshire.html</a><br/>
+  </body>
+</html>
